@@ -10,6 +10,7 @@ import Genres from './Pages/Genres';
 import EditMovie from './Pages/EditMovie';
 import Catalogue from './Pages/Catalogue';
 import GraphQL from './Pages/GraphQL';
+import Login from './Pages/Login';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path:'/graphql',
         element:<GraphQL/>
+      },
+      {
+        path:'/login',
+        element:<Login/>
       }
     ]
   },

@@ -11,12 +11,11 @@ function App() {
           </Col>
           <Col xs={6} md={4}>
             
-            <Link to='' className="">
-            <Badge bg="primary">
-            <span><AiOutlineLogin/> </span>
-              Login
-      </Badge>
-              
+            <Link to='/login' className="">
+              <Badge bg="primary">
+                <span><AiOutlineLogin/> </span>
+                Login
+             </Badge> 
             </Link>
           </Col>
           {/* <hr className="mb-3"></hr> */}
