@@ -5,12 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './Pages/ErrorPage';
 import HomePage from "./Pages/Home"
-import MoviePage from "./Pages/MoviePage"
+import MoviesPage from "./Pages/MoviesPage"
 import Genres from './Pages/Genres';
 import EditMovie from './Pages/EditMovie';
 import Catalogue from './Pages/Catalogue';
 import GraphQL from './Pages/GraphQL';
 import Login from './Pages/Login';
+import MoviePage from './Pages/MoviePage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       },
       {
         path:'/movies',
+        element:<MoviesPage/>
+      },
+      {
+        path:'/movie/:id',
         element:<MoviePage/>
       },
       {

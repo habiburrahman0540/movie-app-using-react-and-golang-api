@@ -9,10 +9,9 @@ function App() {
           <Col xs={12} md={8}>
               <h1 className='mt-3'>Go watch Movies</h1>
           </Col>
-          <Col xs={6} md={4}>
-            
-            <Link to='/login' className="">
-              <Badge bg="primary">
+          <Col xs={6} md={4} className="flex justify-items-md-end">
+            <Link to='/login'>
+              <Badge bg="primary" className=" mt-4">
                 <span><AiOutlineLogin/> </span>
                 Login
              </Badge> 
@@ -21,8 +20,8 @@ function App() {
           {/* <hr className="mb-3"></hr> */}
       </Row>
       <Row>
-          <Col md={3}>
-              <Nav>
+          <Col md={3} className="d-flex justify-content-center">
+              <Nav className='mt-5'>
                 <div className="list-group">
                   <Link to="/" className="list-group-item list-group-item-action">Home</Link>
                   <Link to="/movies" className="list-group-item list-group-item-action">Movies</Link>
